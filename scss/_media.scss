@@ -1,0 +1,124 @@
+@media (max-width: 870px){
+    .skills{
+        padding: 83px 0 16px;
+    }
+    .skills__items{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .skills__item{
+        width: 50%;
+        margin-bottom: 82px;
+    }
+    .portfolio{
+        padding: 65px 0 80px;
+    }
+    .portfolio__item{
+        &+.portfolio__item{
+            margin-top: 77px;
+        }
+    }
+}
+@media (max-width: 430px){
+    .skills__item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px){
+    .header__menu-btn{
+        position: absolute;
+        display: block;
+        padding-bottom: 20px;
+        min-height: 30px;
+    }
+    .header__menu-btn.header__menu-btn--active{
+        .header__menu-row1{
+            transform: rotate(-45deg) translate(-7px, 6px);
+        }
+        .header__menu-row3{
+            transform: rotate(45deg) translate(-6px, -7px);
+        }
+        .header__menu-row2{
+            background-color: transparent;
+        }
+    }
+    
+    .header__menu{
+        ul{
+            display: none;
+            left: 0;
+            right: 0;
+            padding: 0 0 200px 20px;
+            position: absolute;
+            width: 100%;
+            top: 60px;
+            font-size: 34px;
+            line-height: 42px;
+            font-weight: bold;
+            background-color: #fff;
+            li{
+                margin-bottom: 68px;
+            }
+        }  
+    }
+    .menu-lang{
+        display: block;
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        span{
+            color: #000;
+        }
+    }
+    .header__menu-list{
+        border: none;
+    }
+    .header__top-lang{
+        display: none;
+    }
+    .header__top{
+        display: block;
+        padding: 0;
+        margin-top: 58px;
+        width: 200px;
+    }
+    .header__top-name{
+        margin-bottom: 23px;
+    }
+    .header__top-info{
+        margin-bottom: 36px;
+    }
+    .header__img-1{
+        display: none;
+    }
+    .header__img-2{
+        display: block;
+        max-width: 317px;
+        width: 100%;
+        margin-bottom: 83px;
+    }
+    .about{
+        padding: 50px 0px 26px;
+        p {
+          span{
+            display: inline;
+            }  
+        }
+    }
+    .footer{
+        padding: 61px 0 90px;
+    }
+    .footer__btn{
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 376px){
+    .header__menu-list{
+        display: flex !important;
+    }
+}
